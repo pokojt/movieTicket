@@ -33,11 +33,16 @@ $(document).ready(function() {
       var newTicket = new Ticket(movieOption, timeOption, ageOption);
       var price = newTicket.price();
 
+    if (movieOption === "Not a Movie" || timeOption === "" || ageOption ==="") {
+      return alert("Please fill in all fields");
+      $(".show-ticket").hide();
+    }
+
 
   $(".show-ticket").show();
-  $("#nameOfMovie").append(" " + movieOption);
-  $("#movieTime").append(" " + timeOption + "PM");
-  $("#ticketPrice").append(" $" + price);
+  $("#nameOfMovie").text(" " + movieOption);
+  $("#movieTime").text(" " + timeOption + "PM");
+  $("#ticketPrice").text(" $" + price);
 
 
   });
