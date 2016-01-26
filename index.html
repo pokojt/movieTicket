@@ -10,6 +10,47 @@
   </head>
   <body>
     <div class="container">
+      <h1>Movie Ticket</h1>
+      <p class="lead">Please select the following:</p>
+      <form id="movie-ticket">
+        <div class= "form-group">
+          <label for="movies">Current Movies</label>
+          <select id="movies">
+            <option value="">Select Movie</option>
+            <option value="Star Wars">Star Wars</option>
+            <option value="The Revenant">The Revenant</option>
+            <option value="Adam Sandler Movie">Adam Sandler Movie</option>
+            <option value="The Martian">The Martian</option>
+            <option value="The H8ful 8">The H8ful 8</option>
+          </select>
+        </div>
+        <div class= "form-group">
+          <label for="time">Show Times</label>
+          <select id="time">
+            <option value="">Select Show Time</option>
+            <option value="3">3:00PM</option>
+            <option value="7">7:00PM</option>
+            <option value="10">10:00PM</option>
+          </select>
+        </div>
+        <div class= "form-group">
+          <label for="age">Age</label>
+          <select id="age">
+            <option value="">Select Age</option>
+            <option value="5">13 and under</option>
+            <option value="15">13 to 17</option>
+            <option value="15">Adult</option>
+            <option value="60">Senior (55 +)</option>
+          </select>
+        </div>
+        <button type="submit" id="button" class="btn btn-primary">Click here to view ticket price</button>
+      </form>
+    </div>
+    <div class="show-ticket">
+      <h2>Here's your ticket:</h2>
+      <p>Movie:<span id="nameOfMovie"></span></p>
+      <p>Show Time:<span id="movieTime"></span></p>
+      <p>Ticket Price:<span id="ticketPrice"></span></p>
 
     </div>
 
